@@ -1,0 +1,20 @@
+<?php
+
+use yii\helpers\Html;
+
+/** @var yii\web\View $this */
+/** @var app\models\StudentAnswer $model */
+
+$this->title = 'Create Student Answer';
+$this->params['breadcrumbs'][] = ['label' => 'Student Answers', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
+?>
+<div class="student-answer-create">
+
+    <h1><?= Html::encode($this->title) ?></h1>
+
+    <?= $this->render('_form', [
+        'model' => $model,
+    ]) ?>
+
+</div>
